@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 import ActivitiesPage from './pages/ActivitiesPage';
 import ContactPage from './pages/ContactPage';
 import TBIPage from './pages/TBIPage';
+import ExecomProfilePage from './pages/ExecomProfilePage';
+import MemberProfilePage from './pages/MemberProfilePage';
 
 import EngraversPage from './pages/EngraversPage';
 import HobbyHubPage from './pages/HobbyHubPage';
@@ -83,6 +85,8 @@ function App() {
             <Route path="/tbi" element={<TBIPage />} />
             <Route path="/startups/engravers" element={<EngraversPage />} />
             <Route path="/startups/hobbyhub" element={<HobbyHubPage />} />
+            <Route path="/execom/:roleId" element={<ExecomProfilePage />} />
+            <Route path="/member/:memberId" element={<MemberProfilePage />} />
 
             <Route path="/rules" element={<RulesPage />} />
             <Route path="/nisp" element={<PlaceholderPage title="NISP" />} />

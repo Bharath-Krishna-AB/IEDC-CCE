@@ -1,0 +1,170 @@
+.member-profile-page {
+    padding-top: 6rem;
+    min-height: 100vh;
+}
+
+.back-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    background: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.back-link-btn:hover {
+    color: var(--text-primary);
+    transform: translateX(-5px);
+}
+
+.member-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.member-portrait-container {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    aspect-ratio: 4/5;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.member-portrait {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.portrait-decoration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    z-index: 1;
+    opacity: 0.5;
+    filter: blur(40px);
+    transform: translateY(20%);
+}
+
+.member-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-tags {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.member-role-badge {
+    color: #fff;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.member-subrole-badge {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+}
+
+.member-full-name {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    color: var(--text-primary);
+    margin-bottom: 2.5rem;
+}
+
+.member-bio-content {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 2.5rem;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    margin-bottom: 2.5rem;
+}
+
+.member-bio-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.member-bio-content p {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.member-bio-content p:last-child {
+    margin-bottom: 0;
+}
+
+.member-socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.social-link:hover {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 1024px) {
+    .member-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .member-portrait-container {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
