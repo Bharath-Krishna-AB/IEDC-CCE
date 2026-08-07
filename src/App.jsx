@@ -51,13 +51,12 @@ import { ThemeProvider } from './context/ThemeContext';
 
 const AppContent = () => {
   const location = useLocation();
-  // Check if route is exactly /execom/roleId/subRoleId (3 path segments after split)
-  const pathSegments = location.pathname.split('/').filter(Boolean);
-  const isIdCardRoute = pathSegments[0] === 'execom' && pathSegments.length === 3;
+  // Check if route starts with /qr/execom
+  const isQrRoute = location.pathname.startsWith('/qr/execom/');
 
   return (
     <div className="app">
-      {!isIdCardRoute && <Navbar />}
+      {!isQrRoute && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<div style={{ paddingTop: '6rem' }}><AboutSection /></div>} />
@@ -68,7 +67,8 @@ const AppContent = () => {
         <Route path="/startups/engravers" element={<EngraversPage />} />
         <Route path="/startups/hobbyhub" element={<HobbyHubPage />} />
         <Route path="/execom/:roleId" element={<ExecomProfilePage />} />
-        <Route path="/execom/:roleId/:subRoleId" element={<MemberProfilePage />} />
+        <Route path="/execom/:roleId/:subRoleId" element={<MemberProfilePage isQrMode={false} />} />
+        <Route path="/qr/execom/:roleId/:subRoleId" element={<MemberProfilePage isQrMode={true} />} />
 
         <Route path="/rules" element={<RulesPage />} />
         <Route path="/nisp" element={<PlaceholderPage title="NISP" />} />
@@ -76,8 +76,8 @@ const AppContent = () => {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-      {!isIdCardRoute && <ScrollingRibbon />}
-      {!isIdCardRoute && <Footer />}
+      {!isQrRoute && <ScrollingRibbon />}
+      {!isQrRoute && <Footer />}
     </div>
   );
 };

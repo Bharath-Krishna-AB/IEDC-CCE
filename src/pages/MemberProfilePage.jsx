@@ -4,7 +4,7 @@ import { execomData } from '../data/execomData';
 import { motion } from 'framer-motion';
 import './MemberProfilePage.css';
 
-const MemberProfilePage = () => {
+const MemberProfilePage = ({ isQrMode = false }) => {
     const { roleId, subRoleId } = useParams();
     const navigate = useNavigate();
     
@@ -46,7 +46,7 @@ END:VCARD`;
     };
 
     return (
-        <div className="vcard-layout">
+        <div className={`vcard-layout ${isQrMode ? 'vcard-qr-mode' : 'vcard-web-mode'}`}>
             {/* Left Side: Immersive Image Panel */}
             <div className="vcard-image-panel">
                 <img src={member.image} alt={member.name} className="vcard-image" />
@@ -182,16 +182,18 @@ END:VCARD`;
                         )}
                     </motion.div>
 
-                    <div className="vcard-footer">
-                        <div className="vcard-beyond-boundaries">Beyond Boundaries</div>
-                        <Link to="/" className="vcard-return-home">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <line x1="19" y1="12" x2="5" y2="12"></line>
-                                <polyline points="12 19 5 12 12 5"></polyline>
-                            </svg>
-                            Return to IEDC Website
-                        </Link>
-                    </div>
+                    {!isQrMode && (
+                        <div className="vcard-footer">
+                            <div className="vcard-beyond-boundaries">Beyond Boundaries</div>
+                            <Link to={`/execom/${roleData.id}`} className="vcard-return-home">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                                    <polyline points="12 19 5 12 12 5"></polyline>
+                                </svg>
+                                Return to Role Details
+                            </Link>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
