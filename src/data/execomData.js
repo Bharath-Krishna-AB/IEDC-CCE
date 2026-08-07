@@ -10,7 +10,7 @@ export const execomData = [
       { 
         id: "aswathy-p-sajeev",
         name: "Aswathy P Sajeev", 
-        subRole: "Nodal Officer",
+        subRole: "Lead",
         image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
         bio: "Aswathy brings extensive academic and administrative experience to the IEDC. She is dedicated to fostering a culture of innovation and entrepreneurship among the student community.",
         socials: { linkedin: "#", github: "#", twitter: "#" }
@@ -18,7 +18,7 @@ export const execomData = [
       { 
         id: "balakrishnan-c-r",
         name: "Balakrishnan C R", 
-        subRole: "Nodal Officer",
+        subRole: "Co-Lead",
         image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80",
         bio: "Balakrishnan bridges the gap between institutional resources and student aspirations, providing critical mentorship and guidance for upcoming startups.",
         socials: { linkedin: "#", github: "#", twitter: "#" }

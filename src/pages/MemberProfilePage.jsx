@@ -1,21 +1,23 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { getMemberById } from '../data/execomData';
+import { execomData } from '../data/execomData';
 import CardSection from '../components/common/CardSection';
 import BlurredStagger from '../components/common/BlurredStagger';
 import { motion } from 'framer-motion';
 import './MemberProfilePage.css';
 
 const MemberProfilePage = () => {
-    const { memberId } = useParams();
+    const { roleId, subRoleId } = useParams();
     const navigate = useNavigate();
-    const member = getMemberById(memberId);
+    
+    const roleData = execomData.find(role => role.id === roleId);
+    const member = roleData?.members.find(m => m.subRole.toLowerCase().replace(/\s+/g, '-') === subRoleId);
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, [memberId]);
+    }, [roleId, subRoleId]);
 
-    if (!member) {
+    if (!roleData || !member) {
         return (
             <div className="member-profile-page">
                 <CardSection>
@@ -29,13 +31,13 @@ const MemberProfilePage = () => {
     return (
         <div className="member-profile-page">
             <CardSection id="member-profile">
-                <button onClick={() => navigate(-1)} className="back-link-btn">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <Link to={`/execom/${roleData.id}`} className="back-link-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                         <line x1="19" y1="12" x2="5" y2="12"></line>
                         <polyline points="12 19 5 12 12 5"></polyline>
                     </svg>
-                    Back to Role Details
-                </button>
+                    Back to {roleData.title} Division
+                </Link>
 
                 <div className="member-hero-grid">
                     <motion.div 
@@ -45,7 +47,7 @@ const MemberProfilePage = () => {
                         transition={{ duration: 0.5 }}
                     >
                         <img src={member.image} alt={member.name} className="member-portrait" />
-                        <div className="portrait-decoration" style={{ backgroundColor: member.roleColor }}></div>
+                        <div className="portrait-decoration" style={{ backgroundColor: roleData.color }}></div>
                     </motion.div>
 
                     <motion.div 
@@ -55,8 +57,8 @@ const MemberProfilePage = () => {
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
                         <div className="member-tags">
-                            <span className="member-role-badge" style={{ backgroundColor: member.roleColor }}>
-                                {member.roleTitle}
+                            <span className="member-role-badge" style={{ backgroundColor: roleData.color }}>
+                                {roleData.title}
                             </span>
                             <span className="member-subrole-badge">
                                 {member.subRole}
@@ -69,9 +71,9 @@ const MemberProfilePage = () => {
                         
                         <div className="member-bio-content">
                             <h3>About {member.name.split(' ')[0]}</h3>
-                            <p>{member.bio}</p>
+                            <p>{member.bio ? member.bio : "Dedicated member of the IEDC Executive Committee."}</p>
                             <p>
-                                As a crucial part of the IEDC CCE team, {member.name.split(' ')[0]} brings dedication and expertise to the {member.roleTitle} division, helping drive innovation and entrepreneurship across the campus.
+                                As a crucial part of the IEDC CCE team, {member.name.split(' ')[0]} brings dedication and expertise to the {roleData.title} division, helping drive innovation and entrepreneurship across the campus.
                             </p>
                         </div>
 

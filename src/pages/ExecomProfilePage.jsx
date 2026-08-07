@@ -71,7 +71,7 @@ const ExecomProfilePage = () => {
                                     {member.bio ? (member.bio.length > 120 ? `${member.bio.substring(0, 120)}...` : member.bio) : "Dedicated member of the IEDC Executive Committee."}
                                 </p>
                                 
-                                <Link to={`/member/${member.id}`} className="member-premium-btn">
+                                <Link to={`/execom/${roleData.id}/${member.subRole.toLowerCase().replace(/\s+/g, '-')}`} className="member-premium-btn">
                                     <span className="btn-label">VIEW PROFILE</span>
                                     <svg className="btn-icon-simple" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                                         <line x1="5" y1="12" x2="19" y2="12"></line>

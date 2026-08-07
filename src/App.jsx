@@ -86,7 +86,7 @@ function App() {
             <Route path="/startups/engravers" element={<EngraversPage />} />
             <Route path="/startups/hobbyhub" element={<HobbyHubPage />} />
             <Route path="/execom/:roleId" element={<ExecomProfilePage />} />
-            <Route path="/member/:memberId" element={<MemberProfilePage />} />
+            <Route path="/execom/:roleId/:subRoleId" element={<MemberProfilePage />} />
 
             <Route path="/rules" element={<RulesPage />} />
             <Route path="/nisp" element={<PlaceholderPage title="NISP" />} />
