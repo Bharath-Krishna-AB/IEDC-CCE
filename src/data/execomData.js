@@ -13,7 +13,26 @@ export const execomData = [
         subRole: "Lead",
         image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
         bio: "Aswathy brings extensive academic and administrative experience to the IEDC. She is dedicated to fostering a culture of innovation and entrepreneurship among the student community.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       },
       { 
         id: "balakrishnan-c-r",
@@ -21,7 +40,26 @@ export const execomData = [
         subRole: "Co-Lead",
         image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80",
         bio: "Balakrishnan bridges the gap between institutional resources and student aspirations, providing critical mentorship and guidance for upcoming startups.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       }
     ]
   },
@@ -38,7 +76,26 @@ export const execomData = [
         subRole: "CEO",
         image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80",
         bio: "Alfred leads the core operations and strategic vision of IEDC. His leadership ensures the seamless execution of programs and continuous growth of the entrepreneur ecosystem.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       },
       { 
         id: "sidharth-s-menon",
@@ -46,7 +103,26 @@ export const execomData = [
         subRole: "Co-CEO",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
         bio: "Sidharth co-leads the executive committee, managing key partnerships and overseeing the successful rollout of campus-wide entrepreneurship initiatives.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       }
     ]
   },
@@ -63,7 +139,26 @@ export const execomData = [
         subRole: "Lead",
         image: "/execom/COO.jpeg",
         bio: "Abhinav oversees the day-to-day operational functions of the IEDC, ensuring that all events, workshops, and initiatives are executed with precision.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       },
       { 
         id: "romy-rocky",
@@ -71,7 +166,26 @@ export const execomData = [
         subRole: "Co-Lead",
         image: "/execom/Romy Rocky - CO-COO.jpeg",
         bio: "Romy coordinates logistical requirements and internal operations, playing a vital role in maintaining the efficiency of the IEDC team.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       }
     ]
   },
@@ -88,7 +202,26 @@ export const execomData = [
         subRole: "Lead",
         image: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?auto=format&fit=crop&w=400&q=80",
         bio: "Bharath drives the technological vision of IEDC, mentoring students on cutting-edge software engineering and building robust digital infrastructure.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       },
       { 
         id: "dibin-shaju",
@@ -96,7 +229,26 @@ export const execomData = [
         subRole: "Co-Lead",
         image: "/execom/Dibin Shaju - co-CTO.jpeg",
         bio: "Dibin assists in managing technological resources and leads hands-on technical workshops to elevate the technical proficiency of the community.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       }
     ]
   },
@@ -113,7 +265,26 @@ export const execomData = [
         subRole: "Lead",
         image: "/execom/CMO.jpeg",
         bio: "Antony is the mastermind behind IEDC's branding and outreach. He crafts compelling marketing strategies to maximize student engagement and visibility.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       },
       { 
         id: "maria-shiju",
@@ -121,7 +292,26 @@ export const execomData = [
         subRole: "Co-Lead",
         image: "/execom/Maria Shiju - CO-CMO.jpeg",
         bio: "Maria co-leads promotional campaigns and social media presence, ensuring the IEDC brand resonates effectively with the target audience.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       }
     ]
   },
@@ -138,7 +328,26 @@ export const execomData = [
         subRole: "Lead",
         image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
         bio: "Freya oversees the financial health of the organization, managing budgets, sponsorships, and allocations to ensure sustainable growth.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       },
       { 
         id: "muhammed-sinan",
@@ -146,7 +355,26 @@ export const execomData = [
         subRole: "Co-Lead",
         image: "/execom/Muhammed Sinan M - CO-CFO.jpeg",
         bio: "Muhammed assists in financial record-keeping, cost analysis, and ensuring that all events run within their stipulated financial boundaries.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       }
     ]
   },
@@ -163,7 +391,26 @@ export const execomData = [
         subRole: "Lead",
         image: "/execom/BRIJIT G KARAPARAMBIL- CPO.jpg",
         bio: "Brijit focuses on product innovation and lifecycle management, helping budding entrepreneurs transform their abstract ideas into viable market products.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       },
       { 
         id: "anugrah-vibi",
@@ -171,7 +418,26 @@ export const execomData = [
         subRole: "Co-Lead",
         image: "/execom/CO-CPO.jpeg",
         bio: "Anugrah provides hands-on mentorship for prototyping and user experience design, ensuring that student products are both functional and user-centric.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       }
     ]
   },
@@ -188,7 +454,26 @@ export const execomData = [
         subRole: "Lead",
         image: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?auto=format&fit=crop&w=400&q=80",
         bio: "Emil is responsible for the overall creative direction of IEDC, ensuring that all visual outputs and event designs are aesthetic and engaging.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       },
       { 
         id: "caroline-shaju",
@@ -196,7 +481,26 @@ export const execomData = [
         subRole: "Co-Lead",
         image: "/execom/Caroline Shaju-co-CCO.jpeg",
         bio: "Caroline co-leads creative projects, bringing fresh perspectives to UI/UX design, poster creation, and overall campus aesthetics.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       }
     ]
   },
@@ -213,7 +517,26 @@ export const execomData = [
         subRole: "Lead",
         image: "https://images.unsplash.com/photo-1531123897727-8f129e1bf98a?auto=format&fit=crop&w=400&q=80",
         bio: "Merin builds and maintains critical strategic partnerships, fostering strong connections with industry leaders, alumni, and sponsors.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       },
       { 
         id: "heera-poly",
@@ -221,7 +544,26 @@ export const execomData = [
         subRole: "Co-Lead",
         image: "/execom/Heera Poly- CO-CRO.jpeg",
         bio: "Heera coordinates networking events and maintains public relations, ensuring the community has access to valuable industry connections.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       }
     ]
   },
@@ -238,7 +580,26 @@ export const execomData = [
         subRole: "Lead",
         image: "/execom/Athul V R - IPR.jpeg",
         bio: "Athul specializes in Intellectual Property Rights, educating the student body on how to protect their inventions and navigate patent filings.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       },
       { 
         id: "ajvad-k-p",
@@ -246,7 +607,26 @@ export const execomData = [
         subRole: "Co-Lead",
         image: "/execom/CO-IPR.jpeg",
         bio: "Ajvad assists in IP consultations, helping student founders understand trademarking, copyright laws, and intellectual asset management.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       }
     ]
   },
@@ -263,7 +643,26 @@ export const execomData = [
         subRole: "Lead",
         image: "https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&w=400&q=80",
         bio: "Mishael leads the Engravers, spearheading practical skill development workshops and cultivating a strong maker culture on campus.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       },
       { 
         id: "lakshmi-anoop",
@@ -271,7 +670,26 @@ export const execomData = [
         subRole: "Co-Lead",
         image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&q=80",
         bio: "Lakshmi co-facilitates hands-on engineering and maker workshops, empowering students to build tangible solutions to real-world problems.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       }
     ]
   },
@@ -288,7 +706,26 @@ export const execomData = [
         subRole: "Lead",
         image: "/execom/Cathrine Shaju- hobby hub.jpeg",
         bio: "Catherine oversees the Hobby Hub, organizing extracurricular activities that boost creativity and allow students to explore their passions outside academics.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       },
       { 
         id: "devika-rajesh",
@@ -296,7 +733,26 @@ export const execomData = [
         subRole: "Co-Lead",
         image: "/execom/Devika Rajesh - co-hobby hub.jpeg",
         bio: "Devika coordinates community-building events and hobby-based projects, ensuring a balanced and vibrant student life experience.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       }
     ]
   },
@@ -313,7 +769,26 @@ export const execomData = [
         subRole: "Lead",
         image: "/execom/womanlead.jpeg",
         bio: "Aparna leads the Women Lead initiative, dedicating her efforts to empowering female students in tech, leadership, and entrepreneurship.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       },
       { 
         id: "jisna-justin",
@@ -321,7 +796,26 @@ export const execomData = [
         subRole: "Co-Lead",
         image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=400&q=80",
         bio: "Jisna co-organizes mentorship programs and workshops specifically designed to support and elevate female entrepreneurs in the ecosystem.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       }
     ]
   },
@@ -338,7 +832,26 @@ export const execomData = [
         subRole: "Lead",
         image: "/execom/Harris Edison - Media head.HEIC",
         bio: "Harris is the primary visual storyteller for IEDC, handling photography, videography, and producing high-quality media content for all events.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       },
       { 
         id: "kevin-benny",
@@ -346,7 +859,26 @@ export const execomData = [
         subRole: "Co-Lead",
         image: "/execom/Kevin Benny- co-media lead.jpeg",
         bio: "Kevin manages social media campaigns and digital content distribution, ensuring that IEDC's message reaches a wide and engaged audience.",
-        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" }
+        socials: { linkedin: "#", github: "#", instagram: "#", email: "hello@iedccce.org", phone: "+91 98765 43210" },
+        skills: ["Leadership", "Strategic Planning", "Project Management", "Public Speaking"],
+        projects: [
+            { title: "IEDC Summit 2024", role: "Core Organizer", description: "Led the organizing committee for the annual state-level summit." },
+            { title: "Startup Bootcamp", role: "Mentor", description: "Guided 50+ students in transforming their ideas into viable MVPs." }
+        ],
+        education: "B.Tech Computer Science Engineering, 2025",
+        stats: [
+            { value: "15+", label: "Events Organized" },
+            { value: "200+", label: "Members Mentored" },
+            { value: "₹50k", label: "Funds Raised" }
+        ],
+        experience: [
+            { year: "2023 - Present", role: "Executive Member", organization: "IEDC CCE", description: "Spearheaded multiple campus-wide technical initiatives." },
+            { year: "2022 - 2023", role: "Technical Lead", organization: "TinkerHub CCE", description: "Conducted workshops on Web Development and Open Source." }
+        ],
+        achievements: [
+            "Winner of Smart India Hackathon 2023",
+            "Top 10 Finalist in Kerala Startup Mission Idea Fest"
+        ]
       }
     ]
   }
