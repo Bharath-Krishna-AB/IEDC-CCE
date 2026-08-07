@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Achievements from './components/Achievements';
@@ -49,6 +49,39 @@ const Home = () => (
 
 import { ThemeProvider } from './context/ThemeContext';
 
+const AppContent = () => {
+  const location = useLocation();
+  // Check if route is exactly /execom/roleId/subRoleId (3 path segments after split)
+  const pathSegments = location.pathname.split('/').filter(Boolean);
+  const isIdCardRoute = pathSegments[0] === 'execom' && pathSegments.length === 3;
+
+  return (
+    <div className="app">
+      {!isIdCardRoute && <Navbar />}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<div style={{ paddingTop: '6rem' }}><AboutSection /></div>} />
+        <Route path="/activities" element={<ActivitiesPage />} />
+        <Route path="/ipl" element={<PlaceholderPage title="IPL 2.0" />} />
+
+        <Route path="/tbi" element={<TBIPage />} />
+        <Route path="/startups/engravers" element={<EngraversPage />} />
+        <Route path="/startups/hobbyhub" element={<HobbyHubPage />} />
+        <Route path="/execom/:roleId" element={<ExecomProfilePage />} />
+        <Route path="/execom/:roleId/:subRoleId" element={<MemberProfilePage />} />
+
+        <Route path="/rules" element={<RulesPage />} />
+        <Route path="/nisp" element={<PlaceholderPage title="NISP" />} />
+
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+      {!isIdCardRoute && <ScrollingRibbon />}
+      {!isIdCardRoute && <Footer />}
+    </div>
+  );
+};
+
 function App() {
   useEffect(() => {
     const lenis = new Lenis({
@@ -74,29 +107,7 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
-        <div className="app">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<div style={{ paddingTop: '6rem' }}><AboutSection /></div>} />
-            <Route path="/activities" element={<ActivitiesPage />} />
-            <Route path="/ipl" element={<PlaceholderPage title="IPL 2.0" />} />
-
-            <Route path="/tbi" element={<TBIPage />} />
-            <Route path="/startups/engravers" element={<EngraversPage />} />
-            <Route path="/startups/hobbyhub" element={<HobbyHubPage />} />
-            <Route path="/execom/:roleId" element={<ExecomProfilePage />} />
-            <Route path="/execom/:roleId/:subRoleId" element={<MemberProfilePage />} />
-
-            <Route path="/rules" element={<RulesPage />} />
-            <Route path="/nisp" element={<PlaceholderPage title="NISP" />} />
-
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
-          <ScrollingRibbon />
-          <Footer />
-        </div>
+        <AppContent />
       </Router>
     </ThemeProvider>
   );
