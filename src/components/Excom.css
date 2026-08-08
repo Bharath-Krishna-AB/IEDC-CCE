@@ -2,18 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     text-align: center;
 }
 
 .excom-main-title {
     font-size: clamp(3rem, 5vw, 4rem);
-    font-weight: 700;
+    font-weight: 900;
     line-height: 1.1;
     letter-spacing: -2px;
     color: var(--text-primary);
     font-family: var(--font-heading);
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .excom-subtitle {
@@ -22,205 +23,188 @@
     max-width: 600px;
 }
 
-.excom-premium-grid {
+.excom-fluid-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-    gap: 2rem;
+    gap: 5rem 4rem; /* Lots of space to breathe */
 }
 
-/* Base Card - Ultra Premium */
-.excom-premium-card {
-    background-color: var(--card-bg, #ffffff);
-    border-radius: 32px;
-    padding: 1rem; /* The key outer padding from reference */
+/* The fluid card itself - absolutely no borders or backgrounds */
+.excom-fluid-card {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.04), 0 2px 10px rgba(0, 0, 0, 0.02);
-    border: 1px solid var(--border-color, rgba(0,0,0,0.05));
-    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease;
 }
 
-[data-theme='dark'] .excom-premium-card {
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+/* Image Wrapper */
+.fluid-card-image-link {
+    display: block;
+    margin-bottom: 2rem;
+    text-decoration: none;
 }
 
-.excom-premium-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
-}
-
-[data-theme='dark'] .excom-premium-card:hover {
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
-}
-
-/* Inner Image Container */
-.premium-image-container {
+.fluid-card-image-wrapper {
     position: relative;
     width: 100%;
     aspect-ratio: 4 / 5;
-    border-radius: 24px;
+    border-radius: 20px;
     overflow: hidden;
-    margin-bottom: 1.25rem;
-    background-color: #1a1a1a; /* Dark background to ground the images */
+    background-color: var(--border-color); /* Skeleton loader background */
 }
 
-/* The Top Left Pill */
-.premium-badge {
+/* The Tag (Matches individual profile) */
+.fluid-card-badge {
     position: absolute;
-    top: 1.2rem;
-    left: 1.2rem;
-    background-color: #ffffff;
-    color: #111111;
-    font-family: var(--font-heading);
-    font-weight: 800;
-    font-size: 0.75rem;
-    padding: 0.6rem 1.2rem;
+    top: 1.5rem;
+    left: 1.5rem;
+    background: rgba(245, 91, 35, 0.9);
+    color: white;
+    backdrop-filter: blur(8px);
+    padding: 0.5rem 1.2rem;
     border-radius: 50px;
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     z-index: 10;
-    letter-spacing: 1px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
 /* Split Image Layout inside the rounded container */
-.premium-split-view {
+.fluid-card-split {
     display: flex;
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-.premium-img-pane {
+.fluid-card-img-pane {
     flex: 1;
     height: 100%;
     position: relative;
     overflow: hidden;
 }
 
-.premium-img-pane img {
+.fluid-card-img-pane img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center top;
-    transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
-    /* Lower brightness slightly so the white pill pops */
-    filter: brightness(0.9);
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+    filter: brightness(0.95);
 }
 
-.excom-premium-card:hover .premium-img-pane img {
+.excom-fluid-card:hover .fluid-card-img-pane img {
     transform: scale(1.05);
-    filter: brightness(1);
+    filter: brightness(1.05);
 }
 
-.premium-img-overlay {
+/* Subtle gradient to anchor the bottom of the image */
+.fluid-card-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 30%);
+    background: linear-gradient(to top, rgba(0,0,0,0.2) 0%, transparent 40%);
     pointer-events: none;
     z-index: 5;
 }
 
-/* Text Content */
-.premium-content-section {
+/* Content Stream below the image */
+.fluid-card-content {
     display: flex;
     flex-direction: column;
-    padding: 0 0.5rem; /* Slight indent to align with image visually */
-    flex-grow: 1;
+    padding: 0 0.5rem; /* Slight indent */
 }
 
-.premium-title {
+.fluid-card-title {
     font-family: var(--font-heading);
-    font-size: 1.6rem;
-    font-weight: 800;
+    font-size: 2.2rem;
+    font-weight: 900;
     color: var(--text-primary);
     text-transform: uppercase;
-    letter-spacing: -0.5px;
-    margin-bottom: 0.75rem;
-    line-height: 1.2;
+    letter-spacing: -1px;
+    margin: 0 0 1rem 0;
+    line-height: 1.1;
+    transition: color 0.4s ease;
 }
 
-.premium-desc {
-    font-size: 0.95rem;
+.excom-fluid-card:hover .fluid-card-title {
+    color: var(--iedc-orange);
+}
+
+.fluid-card-desc {
+    font-size: 1.1rem;
     color: var(--text-secondary);
     line-height: 1.6;
-    margin-bottom: 1.5rem;
+    margin: 0 0 2rem 0;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    flex-grow: 1;
 }
 
-/* The Signature Button - Sweep Fill Effect */
-.premium-action-btn {
-    display: flex;
+/* Minimalist Action Link */
+.fluid-card-action {
+    display: inline-flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: #050505; /* Deep black */
-    border-radius: 50px;
-    padding: 1rem 1.5rem;
-    text-decoration: none;
-    margin-top: auto;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
-}
-
-/* Sweep Fill Background */
-.premium-action-btn::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: var(--accent-gold);
-    transform: translateX(-101%);
-    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    z-index: 0;
-}
-
-[data-theme='dark'] .premium-action-btn {
-    background-color: #1a1a1a;
-    border: 1px solid rgba(255,255,255,0.1);
-}
-
-.btn-label {
-    color: #ffffff;
+    gap: 0.8rem;
+    color: var(--text-primary);
     font-family: var(--font-heading);
-    font-weight: 700;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     font-size: 0.95rem;
-    letter-spacing: 0.5px;
-    position: relative;
-    z-index: 1;
-    transition: color 0.4s ease;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    align-self: flex-start;
 }
 
-.btn-icon-simple {
-    color: #ffffff;
-    position: relative;
-    z-index: 1;
-    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), color 0.4s ease;
+.fluid-card-action svg {
+    color: var(--iedc-orange);
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.excom-premium-card:hover .premium-action-btn {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    border-color: var(--accent-gold);
+.excom-fluid-card:hover .fluid-card-action {
+    color: var(--iedc-orange);
 }
 
-.excom-premium-card:hover .premium-action-btn::before {
-    transform: translateX(0);
+.excom-fluid-card:hover .fluid-card-action svg {
+    transform: translateX(10px);
 }
 
-.excom-premium-card:hover .btn-label,
-.excom-premium-card:hover .btn-icon-simple {
-    color: #ffffff; /* Or #000 if accent-gold is very light */
-}
-
-.excom-premium-card:hover .btn-icon-simple {
-    transform: translateX(4px);
-}
-
+/* Responsive Grid */
 @media (max-width: 768px) {
-    .excom-premium-grid {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 1.5rem;
+    .excom-header-container {
+        margin-bottom: 3rem;
+    }
+
+    .excom-main-title {
+        font-size: 2.2rem;
+    }
+
+    .excom-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .excom-fluid-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 0 0.5rem;
+    }
+    
+    .fluid-card-title {
+        font-size: 1.8rem;
+    }
+
+    .fluid-card-image-wrapper {
+        aspect-ratio: 3 / 4;
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fluid-card-badge {
+        font-size: 0.7rem;
+        padding: 0.4rem 1rem;
     }
 }

@@ -6,44 +6,43 @@ import { motion } from 'framer-motion';
 import { execomData } from '../data/execomData';
 import './Excom.css';
 
-const ExcomCard = ({ data, delay = 0 }) => (
+const ExcomFluidCard = ({ data, delay = 0 }) => (
     <motion.div
-        className="excom-premium-card"
+        className="excom-fluid-card"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-5% 0px' }}
-        transition={{ duration: 0.5, ease: 'easeOut', delay }}
+        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay }}
     >
-        {/* Top Image Section */}
-        <div className="premium-image-container">
-            <div className="premium-badge">
-                #{data.title.replace(/\s+/g, '')}
+        <Link to={`/execom/${data.id}`} className="fluid-card-image-link">
+            <div className="fluid-card-image-wrapper">
+                <div className="fluid-card-badge">
+                    #{data.title.replace(/\s+/g, '')}
+                </div>
+                
+                <div className="fluid-card-split">
+                    {data.members.map((member, idx) => (
+                        <div key={idx} className="fluid-card-img-pane">
+                            <img src={member.image} alt={member.name} />
+                        </div>
+                    ))}
+                    <div className="fluid-card-overlay"></div>
+                </div>
             </div>
-            
-            <div className="premium-split-view">
-                {data.members.map((member, idx) => (
-                    <div key={idx} className="premium-img-pane">
-                        <img src={member.image} alt={member.name} />
-                    </div>
-                ))}
-                {/* A subtle gradient overlay on the images to make them look cohesive */}
-                <div className="premium-img-overlay"></div>
-            </div>
-        </div>
+        </Link>
 
-        {/* Content Section */}
-        <div className="premium-content-section">
-            <h3 className="premium-title">
+        <div className="fluid-card-content">
+            <h3 className="fluid-card-title">
                 {data.title}
             </h3>
             
-            <div className="premium-desc">
+            <p className="fluid-card-desc">
                 {data.description}
-            </div>
+            </p>
 
-            <Link to={`/execom/${data.id}`} className="premium-action-btn">
-                <span className="btn-label">VIEW DETAILS</span>
-                <svg className="btn-icon-simple" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <Link to={`/execom/${data.id}`} className="fluid-card-action">
+                <span>View Details</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
@@ -76,12 +75,12 @@ const Excom = () => {
                 </motion.p>
             </div>
 
-            <div className="excom-premium-grid">
+            <div className="excom-fluid-grid">
                 {execomData.map((role, index) => (
-                    <ExcomCard
+                    <ExcomFluidCard
                         key={role.id}
                         data={role}
-                        delay={index * 0.05}
+                        delay={index * 0.1}
                     />
                 ))}
             </div>

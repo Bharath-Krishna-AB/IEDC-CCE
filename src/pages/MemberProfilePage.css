@@ -21,10 +21,10 @@
 
 .fluid-container {
     display: flex;
-    max-width: 1200px; /* Reduced max-width to fix side space */
+    max-width: 1600px; /* Greatly increased max-width to fill sideways space */
+    width: 92%; /* Ensures it spans most of the screen on ultra-wide monitors */
     margin: 0 auto;
-    padding: 0 1rem; /* Reduced padding */
-    gap: 4rem; /* Reduced gap */
+    gap: 6rem; /* Restored gap to let elements breathe across the wide space */
     align-items: flex-start;
 }
 
@@ -225,7 +225,11 @@
 
 /* Sections (Skills, Projects) */
 .fluid-section {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
+}
+
+.fluid-section:last-of-type {
+    margin-bottom: 2rem;
 }
 
 .fluid-section-title {
@@ -449,7 +453,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    margin-top: 2rem;
+    margin-top: auto;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .fluid-return-home {
@@ -469,9 +475,24 @@
 
 
 /* --- RESPONSIVENESS --- */
+
+/* Ultrawide Monitors */
+@media (min-width: 1440px) {
+    .fluid-container {
+        gap: 8rem;
+    }
+    .fluid-avatar-wrapper {
+        flex: 0 0 38%; /* Slightly narrower image on massive screens so content can breathe */
+    }
+}
+
+/* Tablet Landscape */
 @media (max-width: 1024px) {
     .fluid-container {
         gap: 3rem;
+    }
+    .fluid-avatar-wrapper {
+        flex: 0 0 45%;
     }
     .fluid-name {
         font-size: 4rem;
@@ -479,13 +500,25 @@
     .fluid-skill-text {
         font-size: 2rem;
     }
+    .fluid-stats-grid {
+        gap: 2.5rem;
+    }
 }
 
+/* Tablet Portrait & Large Mobile */
 @media (max-width: 900px) {
     .fluid-container {
         flex-direction: column;
         gap: 2rem;
-        padding: 0;
+        padding: 1rem 1rem 0 1rem; /* Removed bottom padding */
+    }
+
+    .fluid-section {
+        margin-bottom: 3rem;
+    }
+
+    .fluid-section:last-of-type {
+        margin-bottom: 1rem;
     }
 
     .fluid-avatar-wrapper {
@@ -493,53 +526,144 @@
         position: relative;
         top: 0;
         width: 100%;
-        height: 60vh;
-        border-radius: 0;
-        box-shadow: none;
-        overflow: visible; /* allow socials to show if they overlap */
+        height: 55vh;
+        min-height: 450px;
+        border-radius: 24px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+
+    [data-theme='dark'] .fluid-avatar-wrapper {
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     }
 
     .fluid-qr-mode .fluid-avatar-wrapper {
         height: 50vh;
+        min-height: 400px;
+    }
+
+    .fluid-avatar-brand {
+        top: 1.2rem;
+        left: 1.2rem;
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
     }
 
     .fluid-avatar-socials {
-        bottom: -2rem; /* Pull them down below image on mobile */
+        bottom: 1.5rem;
+        gap: 1.2rem;
     }
 
     .fluid-avatar-socials a {
-        background: var(--bg-secondary);
-        color: var(--text-primary);
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        background: rgba(0,0,0,0.55);
+        color: white;
+        padding: 0.8rem;
     }
 
     .fluid-content-stream {
         width: 100%;
-        padding: 4rem 1.5rem 2rem 1.5rem;
+        padding: 1.5rem 0.5rem 1rem 0.5rem;
     }
 
     .fluid-name {
         font-size: clamp(3rem, 12vw, 5rem);
+        margin-bottom: 1rem;
+    }
+
+    .fluid-stats-grid {
+        gap: 2rem;
+        justify-content: flex-start;
     }
 
     .fluid-btn-primary {
         width: 100%;
         justify-content: center;
+        padding: 1.2rem;
     }
     
     .fluid-actions {
         flex-direction: column;
         align-items: stretch;
+        margin-bottom: 3.5rem;
     }
 
     .fluid-action-links {
-        justify-content: space-around;
+        justify-content: center;
+        gap: 2rem;
         margin-top: 1rem;
     }
 
     .fluid-footer {
         flex-direction: column;
         align-items: flex-start;
-        gap: 2rem;
+        gap: 1rem;
+        margin-top: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/* Small Mobile (Phones) */
+@media (max-width: 480px) {
+    .fluid-container {
+        padding: 0.5rem 0.5rem 0 0.5rem;
+    }
+    
+    .fluid-section {
+        margin-bottom: 2.5rem;
+    }
+    
+    .fluid-avatar-wrapper {
+        height: 45vh;
+        min-height: 380px;
+        border-radius: 20px;
+    }
+
+    .fluid-qr-mode .fluid-avatar-wrapper {
+        height: 45vh;
+        min-height: 350px;
+    }
+
+    .fluid-name {
+        font-size: 3.2rem;
+        letter-spacing: -1px;
+    }
+
+    .fluid-bio {
+        font-size: 1.2rem;
+    }
+
+    .fluid-stats-grid {
+        gap: 1.5rem;
+    }
+
+    .fluid-stat-value {
+        font-size: 2.8rem;
+    }
+
+    .fluid-stat-label {
+        font-size: 0.8rem;
+    }
+
+    .fluid-timeline-role {
+        font-size: 1.2rem;
+    }
+
+    .fluid-project-row h4 {
+        font-size: 1.5rem;
+    }
+
+    .fluid-skill-text {
+        font-size: 1.8rem;
+    }
+
+    .fluid-achievement-item {
+        font-size: 1.05rem;
+    }
+    
+    .fluid-avatar-brand {
+        top: 1rem;
+        left: 1rem;
+        font-size: 0.65rem;
     }
 }
