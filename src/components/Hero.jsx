@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import CardSection from './common/CardSection';
 import BlurredStagger from './common/BlurredStagger';
 import IEDCButton from './common/IEDCButton';
@@ -13,7 +13,38 @@ const blurFadeIn = (delay = 0) => ({
     transition: { duration: 0.65, ease: 'easeOut', delay },
 });
 
+const heroSlides = [
+    {
+        image: '/images/hero/iedc-top-performer-2026.png',
+        alt: 'IEDC CCE recognised as a Top Performer at Kerala Startup Mission Startup Summit 2026',
+        title: 'Top Performer, 2026',
+        description: 'IEDC CCE recognised at the Kerala Startup Mission Startup Summit.',
+    },
+    {
+        image: '/images/hero/campus-compass-team.png',
+        alt: 'Campus Compass student startup team presenting their product',
+        title: 'Campus Compass',
+        description: 'Our student startup team showcasing its campus navigation product.',
+    },
+];
+
 const Hero = () => {
+    const [activeSlide, setActiveSlide] = useState(0);
+
+    useEffect(() => {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined;
+
+        const timer = window.setInterval(() => {
+            setActiveSlide((current) => (current + 1) % heroSlides.length);
+        }, 6000);
+
+        return () => window.clearInterval(timer);
+    }, []);
+
+    const showSlide = (direction) => {
+        setActiveSlide((current) => (current + direction + heroSlides.length) % heroSlides.length);
+    };
+
     return (
         <CardSection className="hero-padding" id="home">
             <div className="hero-container">
@@ -69,18 +100,56 @@ const Hero = () => {
                     </div>
                 </div>
 
-                {/* Hero Image */}
+                {/* Hero image carousel */}
                 <motion.div
                     className="hero-image-wrapper"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6, duration: 0.9, ease: 'easeOut' }}
+                    aria-roledescription="carousel"
+                    aria-label="IEDC CCE highlights"
                 >
-                    <img
-                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2850&q=80"
-                        alt="IEDC CCE Students Collaborating"
-                        className="hero-main-img"
-                    />
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            className="hero-slide"
+                            key={activeSlide}
+                            initial={{ opacity: 0, scale: 1.025 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.75, ease: 'easeInOut' }}
+                            role="group"
+                            aria-roledescription="slide"
+                            aria-label={`${activeSlide + 1} of ${heroSlides.length}`}
+                        >
+                            <img src={heroSlides[activeSlide].image} alt="" className="hero-slide-backdrop" aria-hidden="true" />
+                            <img src={heroSlides[activeSlide].image} alt={heroSlides[activeSlide].alt} className="hero-main-img" />
+                            <div className="hero-slide-caption">
+                                <span className="hero-slide-title">{heroSlides[activeSlide].title}</span>
+                                <span className="hero-slide-description">{heroSlides[activeSlide].description}</span>
+                            </div>
+                        </motion.div>
+                    </AnimatePresence>
+
+                    <div className="hero-carousel-controls">
+                        <button type="button" className="hero-carousel-arrow" onClick={() => showSlide(-1)} aria-label="Show previous image">
+                            <ArrowLeft size={18} />
+                        </button>
+                        <div className="hero-carousel-dots" role="group" aria-label="Choose a slide">
+                            {heroSlides.map((slide, index) => (
+                                <button
+                                    type="button"
+                                    key={slide.image}
+                                    className={`hero-carousel-dot${activeSlide === index ? ' is-active' : ''}`}
+                                    onClick={() => setActiveSlide(index)}
+                                    aria-label={`Show slide ${index + 1}: ${slide.title}`}
+                                    aria-current={activeSlide === index ? 'true' : undefined}
+                                />
+                            ))}
+                        </div>
+                        <button type="button" className="hero-carousel-arrow" onClick={() => showSlide(1)} aria-label="Show next image">
+                            <ArrowRight size={18} />
+                        </button>
+                    </div>
                 </motion.div>
             </div>
         </CardSection>
