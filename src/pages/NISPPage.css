@@ -165,7 +165,14 @@
 }
 
 @media (max-width: 768px) {
-    .nisp-vision { padding: 1.75rem; }
-    .nisp-pillar { padding: 1.75rem; }
-    .nisp-footer-row { flex-direction: column; align-items: flex-start; }
+    .nisp-header { margin-bottom: 2.5rem; }
+    .nisp-title { font-size: clamp(2rem, 8vw, 3rem); }
+    .nisp-section-title { font-size: 1.55rem; }
+    .nisp-vision { padding: 1.35rem; margin-bottom: 3rem; }
+    .nisp-vision p { font-size: 1rem; }
+    .nisp-pillars { grid-template-columns: 1fr; gap: 1rem; margin-bottom: 3rem; }
+    .nisp-pillar { padding: 1.35rem; border-radius: 18px; }
+    .nisp-footer-row { flex-direction: column; align-items: stretch; gap: 1.25rem; }
+    .nisp-cta { align-items: flex-start; gap: 1rem; }
+    .nisp-doc-link { max-width: 100%; overflow-wrap: anywhere; }
 }

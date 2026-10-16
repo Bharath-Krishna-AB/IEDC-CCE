@@ -19,6 +19,22 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (!isOpen) return undefined;
+
+    const previousOverflow = document.body.style.overflow;
+    const closeOnEscape = (event) => {
+      if (event.key === 'Escape') setIsOpen(false);
+    };
+
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', closeOnEscape);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', closeOnEscape);
+    };
+  }, [isOpen]);
+
   const isScrolled = scrollY > 50;
 
   return (
@@ -87,7 +103,9 @@ const Navbar = () => {
         <button
           className="menu-btn"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
+          aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={isOpen}
+          aria-controls="mobile-navigation"
         >
           {isOpen
             ? <X size={28} className="nav-icon" />
@@ -95,7 +113,7 @@ const Navbar = () => {
         </button>
 
         {/* Mobile Slide-in Menu */}
-        <div className={`mobile-menu ${isOpen ? 'active' : ''}`}>
+        <div id="mobile-navigation" className={`mobile-menu ${isOpen ? 'active' : ''}`} aria-hidden={!isOpen}>
           <div className="mobile-nav-links">
             <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
             <Link to="/activities" onClick={() => setIsOpen(false)}>Activities</Link>
@@ -106,6 +124,14 @@ const Navbar = () => {
             <Link to="/nisp" onClick={() => setIsOpen(false)}>NISP</Link>
             <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
             <div className="mobile-actions">
+              <button
+                className="theme-toggle-btn mobile-theme-toggle"
+                onClick={toggleTheme}
+                aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+              >
+                {theme === 'dark' ? <Sun size={18} color="gold" /> : <Moon size={18} />}
+                <span>{theme === 'dark' ? 'Light mode' : 'Dark mode'}</span>
+              </button>
               <IEDCButton
                 to="/contact"
                 size="lg"

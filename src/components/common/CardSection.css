@@ -1,5 +1,5 @@
 .card-section-wrapper {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem clamp(0.5rem, 2vw, 1rem);
     width: 100%;
     box-sizing: border-box;
 }
@@ -22,8 +22,13 @@
 }
 
 @media (max-width: 768px) {
+    .card-section-wrapper {
+        padding: 0.4rem 0.5rem;
+    }
+
     .card-section-inner {
-        padding: 2.5rem 1.5rem;
+        padding: clamp(1.5rem, 6vw, 2.25rem) clamp(0.9rem, 4vw, 1.5rem);
         border-radius: 16px;
+        border-width: 6px;
     }
 }

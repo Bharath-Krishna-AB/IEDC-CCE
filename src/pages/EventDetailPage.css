@@ -243,23 +243,65 @@
 }
 
 @media (max-width: 600px) {
+    .event-detail-page {
+        padding-top: 5.5rem;
+    }
+
     .event-detail-cover {
-        height: 220px;
+        height: clamp(180px, 58vw, 220px);
+        border-radius: 16px;
+        margin-bottom: 1.5rem;
+    }
+
+    .event-detail-title {
+        font-size: clamp(2rem, 9vw, 2.8rem);
+        letter-spacing: -1px;
+        overflow-wrap: anywhere;
+    }
+
+    .event-detail-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .event-detail-dateline {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    .event-detail-body {
+        gap: 2rem;
+    }
+
+    .event-detail-overview,
+    .event-detail-highlights li {
+        font-size: 1rem;
+    }
+
+    .event-facts-card {
+        padding: 1.25rem;
+        gap: 1rem;
     }
 
     .event-gallery-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .event-prevnext {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
     }
 
     .event-prevnext-link {
-        max-width: 100%;
+        max-width: calc(50% - 0.5rem);
+        font-size: 0.9rem;
+        overflow-wrap: anywhere;
     }
 
     .event-prevnext-link.next {
         text-align: left;
+        margin-left: auto;
     }
 }

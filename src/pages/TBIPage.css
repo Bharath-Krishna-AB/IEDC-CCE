@@ -51,5 +51,20 @@
 @media (max-width: 768px) {
     .tbi-grid {
         grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .tbi-card {
+        padding: 1.25rem;
+        border-radius: 18px;
+    }
+
+    .tbi-card-img {
+        height: clamp(180px, 56vw, 260px);
+        margin-bottom: 1.25rem;
+    }
+
+    .tbi-card-content h3 {
+        font-size: 1.6rem;
     }
 }

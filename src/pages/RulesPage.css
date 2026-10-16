@@ -1,0 +1,33 @@
+@media (max-width: 600px) {
+    .rules-content {
+        font-size: 1rem !important;
+        line-height: 1.7 !important;
+    }
+
+    .rules-block {
+        margin-bottom: 2.5rem !important;
+    }
+
+    .rules-heading {
+        font-size: 1.5rem !important;
+        line-height: 1.2;
+    }
+
+    .rules-list {
+        padding-left: 1.25rem !important;
+        gap: 0.6rem !important;
+    }
+
+    .rules-stage-card {
+        padding: 1.15rem !important;
+    }
+
+    .rules-level-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0.8rem !important;
+    }
+
+    .rules-level-grid > div {
+        padding: 1.1rem !important;
+    }
+}

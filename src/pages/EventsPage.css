@@ -62,7 +62,8 @@
 
 .events-card-cover {
     position: relative;
-    height: 200px;
+    width: 100%;
+    aspect-ratio: 16 / 10;
     overflow: hidden;
 }
 
@@ -168,7 +169,42 @@
 }
 
 @media (max-width: 600px) {
+    .events-filter-row {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        scroll-snap-type: x proximity;
+        padding: 0.15rem 0.1rem 0.75rem;
+        margin: 0 -0.1rem 1.75rem;
+        scrollbar-width: thin;
+    }
+
+    .events-filter-chip {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        padding: 0.55rem 1rem;
+    }
+
     .events-grid {
         grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .events-card-content {
+        padding: 1.15rem;
+    }
+
+    .events-card-title {
+        font-size: clamp(1.2rem, 5vw, 1.4rem);
+    }
+
+    .events-card-date {
+        font-size: 0.78rem;
+        line-height: 1.4;
+    }
+
+    .events-card-teaser {
+        font-size: 0.9rem;
     }
 }

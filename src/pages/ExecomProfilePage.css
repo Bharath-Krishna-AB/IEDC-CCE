@@ -56,9 +56,8 @@
 
 /* Premium Members Grid */
 .role-members-grid {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
     gap: 3rem;
     max-width: 1000px;
     margin: 0 auto;
@@ -235,10 +234,11 @@
 
 @media (max-width: 768px) {
     .role-members-grid {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+        gap: 1rem;
     }
     .role-title-large {
-        font-size: 2.8rem;
+        font-size: clamp(2rem, 9vw, 2.8rem);
+        overflow-wrap: anywhere;
     }
 }

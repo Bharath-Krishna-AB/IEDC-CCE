@@ -9,7 +9,7 @@
 }
 
 .recent-events-title {
-    font-size: 3rem;
+    font-size: clamp(2rem, 6vw, 3rem);
     font-weight: 700;
     color: var(--text-primary);
     max-width: 800px;
@@ -185,11 +185,39 @@
 @media (max-width: 768px) {
     .recent-events-gallery-header {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 1.5rem;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
     }
 
     .event-gallery-card {
-        min-width: 320px;
+        min-width: 0;
+        flex: 0 0 min(400px, 82vw);
+    }
+
+    .gallery-scroll-container {
+        gap: 1rem;
+        scroll-snap-type: x proximity;
+        scroll-padding-inline: 0.25rem;
+    }
+
+    .event-gallery-card {
+        scroll-snap-align: start;
+    }
+
+    .event-img-wrapper {
+        height: 210px;
+    }
+
+    .event-content {
+        padding: 1.1rem;
+    }
+
+    .event-title {
+        font-size: 1.3rem;
+    }
+
+    .event-desc {
+        font-size: 0.9rem;
     }
 }

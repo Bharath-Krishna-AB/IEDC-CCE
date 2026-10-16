@@ -206,30 +206,38 @@
     .hero-top-row {
         flex-direction: column;
         align-items: flex-start;
-        gap: 1.5rem;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
     }
 
-    .hero-title {
-        font-size: 3.2rem;
-        letter-spacing: -1.5px;
-    }
-
-    .hero-actions {
-        flex-direction: row;
+    .hero-title-col,
+    .hero-action-col {
         width: 100%;
     }
 
-    .btn-lg {
-        padding: 0.8rem 1.5rem !important;
-        flex: 1;
-        text-align: center;
+    .hero-title {
+        font-size: clamp(1.85rem, 8.6vw, 3.2rem);
+        letter-spacing: -1.2px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-join-btn {
+        width: 100%;
         justify-content: center;
-        display: flex;
+    }
+
+    .hero-subtitle {
+        max-width: 100%;
+        font-size: 0.9rem;
     }
 
     .hero-image-wrapper {
-        height: 40vh;
-        min-height: 300px;
+        height: clamp(280px, 58vw, 420px);
+        min-height: 0;
         border-radius: 16px;
     }
 
