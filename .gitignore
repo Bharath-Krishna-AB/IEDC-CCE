@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Raw execom photo/poster sources (optimised copies live in public/execom)
+src/assets/IEDC EXCOM ID Cards 2026-27/
+src/assets/IEDC_CCE_EXCOM/
+.tmp_split/
