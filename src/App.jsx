@@ -18,6 +18,7 @@ import EngraversPage from './pages/EngraversPage';
 import HobbyHubPage from './pages/HobbyHubPage';
 import NotFoundPage from './pages/NotFoundPage';
 import RulesPage from './pages/RulesPage';
+import NISPPage from './pages/NISPPage';
 import ScrollingRibbon from './components/common/ScrollingRibbon';
 import { useEffect } from 'react';
 import Lenis from 'lenis';
@@ -71,7 +72,7 @@ const AppContent = () => {
         <Route path="/qr/execom/:roleId/:subRoleId" element={<MemberProfilePage isQrMode={true} />} />
 
         <Route path="/rules" element={<RulesPage />} />
-        <Route path="/nisp" element={<PlaceholderPage title="NISP" />} />
+        <Route path="/nisp" element={<NISPPage />} />
 
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
