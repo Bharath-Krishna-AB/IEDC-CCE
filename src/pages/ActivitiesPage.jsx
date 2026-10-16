@@ -66,31 +66,18 @@ const ActivitiesPage = () => {
                             <Calendar size={28} color="var(--accent-gold)" /> Recent Events
                         </h3>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-
                             <div className="event-list-item">
                                 <div className="event-date-box">
-                                    <span style={{ fontSize: '2rem', fontWeight: '700', lineHeight: '1', color: 'var(--accent-gold)' }}>15</span>
-                                    <span style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text-secondary)' }}>MAR</span>
+                                    <span style={{ fontSize: '1.5rem', fontWeight: '700', lineHeight: '1', color: 'var(--accent-gold)' }}>2026</span>
+                                    <span style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text-secondary)' }}>SUMMIT</span>
                                 </div>
                                 <div>
-                                    <h4 style={{ fontSize: '1.4rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-primary)' }}>Idea Pitching Competition</h4>
-                                    <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>Showcase your innovative ideas and win exciting prizes.</p>
-                                    <button className="btn btn-outline rounded-pill" style={{ padding: '0.5rem 1.2rem', fontSize: '0.85rem' }}>Read More</button>
+                                    <h4 style={{ fontSize: '1.4rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-primary)' }}>Campus Compass Recognised at IEDC Summit 2026</h4>
+                                    <p style={{ color: 'var(--text-secondary)', marginBottom: '0.8rem' }}>The CCE student startup powered the IEDC Summit 2026 event map and was recognised at the state-level summit.</p>
+                                    <p style={{ color: 'var(--text-secondary)', marginBottom: '0.8rem' }}><strong>Team:</strong> Akanksha Rose Jose, Adithya C Shaji, Gauri Rajesh Menon, and Archa S Kumar (S3 CSDS)</p>
+                                    <p style={{ color: 'var(--text-secondary)', marginBottom: '0' }}><strong>Mentor:</strong> Aswathy P Sajeev, IEDC CCE Nodal Officer</p>
                                 </div>
                             </div>
-
-                            <div className="event-list-item">
-                                <div className="event-date-box">
-                                    <span style={{ fontSize: '2rem', fontWeight: '700', lineHeight: '1', color: 'var(--accent-gold)' }}>22</span>
-                                    <span style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text-secondary)' }}>FEB</span>
-                                </div>
-                                <div>
-                                    <h4 style={{ fontSize: '1.4rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-primary)' }}>Workshop on IoT</h4>
-                                    <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>Hands-on workshop on Internet of Things using Arduino.</p>
-                                    <button className="btn btn-outline rounded-pill" style={{ padding: '0.5rem 1.2rem', fontSize: '0.85rem' }}>Read More</button>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
 
