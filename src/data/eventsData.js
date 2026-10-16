@@ -174,8 +174,8 @@ export const events = [
     },
     {
         id: "curio-onam-mehendi",
-        title: "ഒന്ന് മൈലാഞ്ചി ഇട്ടാലോ?",
-        subtitle: "CURIO Onam Mehendi Event",
+        title: "Onam Mehendi Event",
+        subtitle: "CURIO · Onnu Mylanchi Ittaalo?",
         category: "Hobby Hub",
         series: "CURIO",
         date: "20 August 2026, 12:00–3:30 PM",
