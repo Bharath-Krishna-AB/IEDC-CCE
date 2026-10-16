@@ -9,6 +9,15 @@ import './RecentEvents.css';
 const events = [
     {
         id: 1,
+        tag: "Achievement",
+        date: "IEDC Summit 2026",
+        title: "Campus Compass Recognised at IEDC Summit 2026",
+        desc: "Our student startup Campus Compass powered the IEDC Summit 2026 Event Map and was recognised by the Government of Kerala and Kerala Startup Mission. Team: Akanksha Rose Jose, Adithya C Shaji, Gauri Rajesh Menon, Archa S Kumar (S3 CSDS). Mentor: Aswathy P Sajeev.",
+        img: "/events/campus-compass-summit-2026.jpg",
+        fit: "contain"
+    },
+    {
+        id: 2,
         tag: "Summit",
         date: "Oct 15, 2025",
         title: "IEDC Annual Summit 2025",
@@ -16,7 +25,7 @@ const events = [
         img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80"
     },
     {
-        id: 2,
+        id: 3,
         tag: "Hackathon",
         date: "Nov 02, 2025",
         title: "Innovators Hack 48H",
@@ -24,7 +33,7 @@ const events = [
         img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
     },
     {
-        id: 3,
+        id: 4,
         tag: "Workshop",
         date: "Nov 20, 2025",
         title: "AI & ML Prototyping",
@@ -32,7 +41,7 @@ const events = [
         img: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80"
     },
     {
-        id: 4,
+        id: 5,
         tag: "Pitch Day",
         date: "Dec 05, 2025",
         title: "Seed Fund Pitch 2025",
@@ -79,7 +88,7 @@ const RecentEvents = () => {
                         viewport={{ once: true, margin: '-5% 0px' }}
                         transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.08 }}
                     >
-                        <div className="event-img-wrapper">
+                        <div className={`event-img-wrapper${event.fit === 'contain' ? ' event-img-wrapper--contain' : ''}`}>
                             <img src={event.img} alt={event.title} className="event-img" />
                             <div className="event-tag">{event.tag}</div>
                         </div>
