@@ -90,6 +90,34 @@ const Excom = () => {
                     />
                 ))}
             </div>
+
+            <motion.div
+                className="excom-legacy"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-5% 0px' }}
+                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            >
+                <div className="excom-legacy-text">
+                    <span className="excom-legacy-eyebrow">Looking back</span>
+                    <h3 className="excom-legacy-title">Execom 2025-26</h3>
+                    <p className="excom-legacy-desc">
+                        The team that led IEDC CCE through the 2025-26 academic year, laying the groundwork for everything we're building today.
+                    </p>
+                    <a href="/execom/execom-2025-26.jpg" target="_blank" rel="noopener noreferrer" className="fluid-card-action">
+                        <span>View full poster</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <a href="/execom/execom-2025-26.jpg" target="_blank" rel="noopener noreferrer" className="excom-legacy-poster-link">
+                    <div className="excom-legacy-poster-frame">
+                        <img src="/execom/execom-2025-26.jpg" alt="IEDC CCE Execom 2025-26" className="excom-legacy-poster" loading="lazy" />
+                    </div>
+                </a>
+            </motion.div>
         </CardSection>
     );
 };

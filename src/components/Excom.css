@@ -220,3 +220,112 @@
         padding: 0.4rem 1rem;
     }
 }
+
+/* ─── Previous year execom showcase ─────────────────────────────────────── */
+.excom-legacy {
+    margin-top: 7rem;
+    padding: 3.5rem;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+    align-items: center;
+    border-radius: 28px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.excom-legacy::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -10%;
+    width: 60%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-gold) 0%, transparent 70%);
+    opacity: 0.12;
+    pointer-events: none;
+}
+
+.excom-legacy-text {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.excom-legacy-eyebrow {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+}
+
+.excom-legacy-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    line-height: 1.05;
+    color: var(--text-primary);
+    margin: 0 0 1.25rem;
+}
+
+.excom-legacy-desc {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 440px;
+    margin: 0 0 2rem;
+}
+
+.excom-legacy-poster-link {
+    display: block;
+    justify-self: center;
+    position: relative;
+    z-index: 1;
+}
+
+.excom-legacy-poster-frame {
+    width: min(340px, 100%);
+    aspect-ratio: 9 / 16;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.35), 0 0 0 1px var(--border-color);
+    transform: rotate(2deg);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
+}
+
+.excom-legacy-poster-link:hover .excom-legacy-poster-frame {
+    transform: rotate(0deg) scale(1.03);
+    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.45), 0 0 0 1px var(--border-color);
+}
+
+.excom-legacy-poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .excom-legacy {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding: 2.5rem 1.5rem;
+        margin-top: 5rem;
+        text-align: center;
+    }
+    .excom-legacy-text {
+        align-items: center;
+    }
+    .excom-legacy-poster-frame {
+        width: min(280px, 100%);
+        transform: rotate(0deg);
+    }
+}
