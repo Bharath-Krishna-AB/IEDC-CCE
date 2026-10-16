@@ -45,7 +45,7 @@
 .fluid-card-image-wrapper {
     position: relative;
     width: 100%;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 3 / 4;
     border-radius: 20px;
     overflow: hidden;
     background-color: var(--border-color); /* Skeleton loader background */
@@ -97,6 +97,18 @@
 .excom-fluid-card:hover .fluid-card-img-pane img {
     transform: scale(1.05);
     filter: brightness(1.05);
+}
+
+.fluid-card-poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.excom-fluid-card:hover .fluid-card-poster {
+    transform: scale(1.03);
 }
 
 /* Subtle gradient to anchor the bottom of the image */

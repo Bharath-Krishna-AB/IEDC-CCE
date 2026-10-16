@@ -16,18 +16,24 @@ const ExcomFluidCard = ({ data, delay = 0 }) => (
     >
         <Link to={`/execom/${data.id}`} className="fluid-card-image-link">
             <div className="fluid-card-image-wrapper">
-                <div className="fluid-card-badge">
-                    #{data.title.replace(/\s+/g, '')}
-                </div>
-                
-                <div className="fluid-card-split">
-                    {data.members.map((member, idx) => (
-                        <div key={idx} className="fluid-card-img-pane">
-                            <img src={member.image} alt={member.name} />
+                {data.card ? (
+                    <img src={data.card} alt={`${data.title} - IEDC CCE Execom`} className="fluid-card-poster" />
+                ) : (
+                    <>
+                        <div className="fluid-card-badge">
+                            #{data.title.replace(/\s+/g, '')}
                         </div>
-                    ))}
-                    <div className="fluid-card-overlay"></div>
-                </div>
+
+                        <div className="fluid-card-split">
+                            {data.members.map((member, idx) => (
+                                <div key={idx} className="fluid-card-img-pane">
+                                    <img src={member.image} alt={member.name} />
+                                </div>
+                            ))}
+                            <div className="fluid-card-overlay"></div>
+                        </div>
+                    </>
+                )}
             </div>
         </Link>
 

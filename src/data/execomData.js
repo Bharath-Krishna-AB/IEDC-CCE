@@ -4,6 +4,7 @@ export const execomData = [
     title: "NODAL OFFICER",
     span: 2, // Tells the grid to span 2 columns
     color: "#5e2916", // Dark brown/red
+    card: "/execom/cards/nodal-officer.jpg",
     textPosition: "bottom", // Where the title is placed
     description: "The Nodal Officers guide and support the IEDC, bridging the gap between the institution and the student community. They ensure smooth operations and foster an environment of innovation.",
     members: [
@@ -68,6 +69,7 @@ export const execomData = [
     title: "CEO",
     span: 2,
     color: "#18208c", // Blue
+    card: "/execom/cards/ceo.jpg",
     description: "The Chief Executive Officers lead the execution of all IEDC activities, providing strategic direction and managing the core team to achieve the organization's goals.",
     members: [
       { 
@@ -131,6 +133,7 @@ export const execomData = [
     title: "COO",
     span: 1,
     color: "#efcc00", // Yellow
+    card: "/execom/cards/coo.jpg",
     description: "The Chief Operating Officers oversee the day-to-day administrative and operational functions of the IEDC, ensuring events and initiatives run efficiently.",
     members: [
       { 
@@ -194,6 +197,7 @@ export const execomData = [
     title: "CTO",
     span: 1,
     color: "#08b35f", // Green
+    card: "/execom/cards/cto.jpg",
     description: "The Chief Technology Officers are responsible for all technical aspects of IEDC, managing technological resources and guiding tech-driven projects.",
     members: [
       { 
@@ -257,6 +261,7 @@ export const execomData = [
     title: "CMO",
     span: 1,
     color: "#e4112e", // Red
+    card: "/execom/cards/cmo.jpg",
     description: "The Chief Marketing Officers handle the branding, outreach, and promotional strategies of IEDC, maximizing visibility and engagement across the campus.",
     members: [
       { 
@@ -320,6 +325,7 @@ export const execomData = [
     title: "CFO",
     span: 1,
     color: "#4bd477", // Mint Green
+    card: "/execom/cards/cfo.jpg",
     description: "The Chief Financial Officers manage the financial planning, record-keeping, and financial reporting for IEDC to ensure sustainable growth.",
     members: [
       { 
@@ -383,6 +389,7 @@ export const execomData = [
     title: "CPO",
     span: 1,
     color: "#8d0ba4", // Purple
+    card: "/execom/cards/cpo.jpg",
     description: "The Chief Publicity Officers lead the publicity and outreach efforts of IEDC, ensuring events and initiatives reach the widest possible audience.",
     members: [
       { 
@@ -446,6 +453,7 @@ export const execomData = [
     title: "CCO",
     span: 1,
     color: "#e53327", // Reddish
+    card: "/execom/cards/cco.jpg",
     description: "The Chief Creative Officers lead the creative vision of IEDC, bringing innovative design and fresh perspectives to all endeavors.",
     members: [
       { 
@@ -509,6 +517,7 @@ export const execomData = [
     title: "CRO",
     span: 1,
     color: "#b01278", // Magenta
+    card: "/execom/cards/cro.jpg",
     description: "The Chief Relations Officers build and maintain strategic partnerships, sponsorships, and networking opportunities for the community.",
     members: [
       { 
@@ -572,6 +581,7 @@ export const execomData = [
     title: "IPR",
     span: 1,
     color: "#9f129a", // Purple Pink
+    card: "/execom/cards/ipr.jpg",
     description: "The Intellectual Property Rights leads focus on educating the community about IP and assisting in filing patents and protecting innovations.",
     members: [
       { 
@@ -635,6 +645,7 @@ export const execomData = [
     title: "ENGRAVERS",
     span: 1,
     color: "#f65a19", // Orange
+    card: "/execom/cards/engravers.jpg",
     description: "The Engravers team leads hands-on skill development workshops, focusing on maker culture and practical building.",
     members: [
       { 
@@ -761,6 +772,7 @@ export const execomData = [
     title: "WOMEN LEAD",
     span: 1,
     color: "#7933d8", // Indigo
+    card: "/execom/cards/women-lead.jpg",
     description: "The Women Lead initiative focuses on empowering female students in entrepreneurship, tech, and leadership roles.",
     members: [
       { 
@@ -824,6 +836,7 @@ export const execomData = [
     title: "MEDIA",
     span: 1,
     color: "#2716a7", // Blue
+    card: "/execom/cards/media.jpg",
     description: "The Media team handles all visual content, social media presence, photography, and videography for IEDC events.",
     members: [
       { 
