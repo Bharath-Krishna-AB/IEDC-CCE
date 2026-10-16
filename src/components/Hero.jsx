@@ -15,7 +15,7 @@ const blurFadeIn = (delay = 0) => ({
 
 const heroSlides = [
     {
-        image: '/images/hero/iedc-top-performer-2026.png',
+        image: '/images/hero/iedc-top-performer-2026.jpg',
         alt: 'IEDC CCE recognised as a Top Performer at Kerala Startup Mission Startup Summit 2026',
         title: 'Top Performer, 2026',
         description: 'IEDC CCE recognised at the Kerala Startup Mission Startup Summit.',
