@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Twitter, Linkedin, Instagram, Mail, ArrowRight } from 'lucide-react';
+import { Linkedin, Instagram, Mail, ArrowRight } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -37,22 +37,12 @@ const Footer = () => {
                         <h4 className="footer-heading">SOCIAL</h4>
                         <ul className="footer-social-links">
                             <li>
-                                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                                    <Github size={20} /> <span>GitHub</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                                    <Twitter size={20} /> <span>Twitter</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/company/iedccce" target="_blank" rel="noopener noreferrer">
                                     <Linkedin size={20} /> <span>LinkedIn</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.instagram.com/iedc.cce/" target="_blank" rel="noopener noreferrer">
                                     <Instagram size={20} /> <span>Instagram</span>
                                 </a>
                             </li>
