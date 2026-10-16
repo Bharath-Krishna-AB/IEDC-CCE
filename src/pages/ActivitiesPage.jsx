@@ -1,9 +1,10 @@
 import React from 'react';
 import CardSection from '../components/common/CardSection';
 import BlurredStagger from '../components/common/BlurredStagger';
+import IEDCButton from '../components/common/IEDCButton';
 import './ActivitiesPage.css';
 import { FileText, Calendar, ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 
 const ActivitiesPage = () => {
     const reports = [
@@ -29,14 +30,14 @@ const ActivitiesPage = () => {
                             delay={0.1}
                         />
                     </h2>
-                    <motion.p
+                    <Motion.p
                         style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', marginTop: '1rem' }}
                         initial={{ opacity: 0, y: 14 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
                     >
                         Explore our annual reports and recent events
-                    </motion.p>
+                    </Motion.p>
                 </div>
 
                 <div className="activities-grid">
@@ -80,6 +81,9 @@ const ActivitiesPage = () => {
                                     <p style={{ color: 'var(--text-secondary)', marginBottom: '0' }}><strong>Mentor:</strong> Aswathy P Sajeev, IEDC CCE Nodal Officer</p>
                                 </div>
                             </div>
+                            <IEDCButton to="/events" size="md" icon={<ArrowRight size={16} />}>
+                                All Events 2026-27
+                            </IEDCButton>
                         </div>
                     </div>
 

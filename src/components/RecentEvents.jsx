@@ -2,7 +2,7 @@ import React from 'react';
 import CardSection from './common/CardSection';
 import BlurredStagger from './common/BlurredStagger';
 import IEDCButton from './common/IEDCButton';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 import { Calendar, ArrowRight } from 'lucide-react';
 import './RecentEvents.css';
 
@@ -66,21 +66,21 @@ const RecentEvents = () => {
                 </h2>
 
                 {/* Button — slide up */}
-                <motion.div
+                <Motion.div
                     initial={{ opacity: 0, y: 14 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: '-8% 0px' }}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.3 }}
                 >
-                    <IEDCButton to="/activities" size="md" icon={<ArrowRight size={16} />}>
+                    <IEDCButton to="/events" size="md" icon={<ArrowRight size={16} />}>
                         View All Events
                     </IEDCButton>
-                </motion.div>
+                </Motion.div>
             </div>
 
             <div className="gallery-scroll-container">
                 {events.map((event, index) => (
-                    <motion.div
+                    <Motion.div
                         className="event-gallery-card"
                         key={event.id}
                         initial={{ opacity: 0, y: 22 }}
@@ -99,7 +99,7 @@ const RecentEvents = () => {
                             <h3 className="event-title">{event.title}</h3>
                             <p className="event-desc">{event.desc}</p>
                         </div>
-                    </motion.div>
+                    </Motion.div>
                 ))}
             </div>
         </CardSection>

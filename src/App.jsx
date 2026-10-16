@@ -9,6 +9,8 @@ import BentoFeatures from './components/BentoFeatures';
 import Excom from './components/Excom';
 import Footer from './components/Footer';
 import ActivitiesPage from './pages/ActivitiesPage';
+import EventsPage from './pages/EventsPage';
+import EventDetailPage from './pages/EventDetailPage';
 import ContactPage from './pages/ContactPage';
 import TBIPage from './pages/TBIPage';
 import ExecomProfilePage from './pages/ExecomProfilePage';
@@ -62,6 +64,8 @@ const AppContent = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<div style={{ paddingTop: '6rem' }}><AboutSection /></div>} />
         <Route path="/activities" element={<ActivitiesPage />} />
+        <Route path="/events" element={<EventsPage />} />
+        <Route path="/events/:eventId" element={<EventDetailPage />} />
         <Route path="/ipl" element={<PlaceholderPage title="IPL 2.0" />} />
 
         <Route path="/tbi" element={<TBIPage />} />

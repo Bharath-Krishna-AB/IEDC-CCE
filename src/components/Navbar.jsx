@@ -99,6 +99,7 @@ const Navbar = () => {
           <div className="mobile-nav-links">
             <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
             <Link to="/activities" onClick={() => setIsOpen(false)}>Activities</Link>
+            <Link to="/events" onClick={() => setIsOpen(false)}>Events</Link>
             <Link to="/ipl" onClick={() => setIsOpen(false)}>IPL 2.0</Link>
             <Link to="/tbi" onClick={() => setIsOpen(false)}>Startups</Link>
             <Link to="/rules" onClick={() => setIsOpen(false)}>Rules</Link>
