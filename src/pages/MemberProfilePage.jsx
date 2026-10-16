@@ -95,7 +95,7 @@ ORG:IEDC CCE
 TITLE:${member.subRole} - ${roleData.title}
 TEL;TYPE=WORK,VOICE:${member.socials?.phone || ""}
 EMAIL;TYPE=PREF,INTERNET:${member.socials?.email || ""}
-URL:https://iedc-cce.com/execom/${roleData.id}/${subRoleId}
+URL:${window.location.origin}/execom/${roleData.id}/${subRoleId}
 END:VCARD`;
         
         const blob = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
