@@ -75,17 +75,10 @@
     opacity: 0.75;
 }
 
-.logo-bold {
-    font-weight: 700;
-    color: var(--text-primary);
-}
-
-.logo-thin {
-    font-weight: 300;
-    color: var(--text-secondary);
-    font-family: var(--font-body);
-    font-size: 1.2rem;
-    margin-top: 4px;
+.navbar-logo-img {
+    height: 44px;
+    width: auto;
+    display: block;
 }
 
 /* ─── Desktop Nav Links ─────────────────────────────────────────────────── */

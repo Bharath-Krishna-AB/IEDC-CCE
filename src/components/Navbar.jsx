@@ -4,6 +4,8 @@ import { Menu, X, Sun, Moon, ArrowUpRight } from 'lucide-react';
 import IEDCButton from './common/IEDCButton';
 import './Navbar.css';
 import { useTheme } from '../context/ThemeContext';
+import logoBlack from '../assets/SVG/Black Horizontal.svg';
+import logoWhite from '../assets/SVG/White Horizontal.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,8 +28,11 @@ const Navbar = () => {
         {/* Logo */}
         <div className="navbar-brand">
           <Link to="/" className="navbar-logo">
-            <span className="logo-bold">IEDC</span>
-            <span className="logo-thin">| CCE</span>
+            <img
+              src={theme === 'dark' ? logoWhite : logoBlack}
+              alt="IEDC CCE"
+              className="navbar-logo-img"
+            />
           </Link>
         </div>
 
