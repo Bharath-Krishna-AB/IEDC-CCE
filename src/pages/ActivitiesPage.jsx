@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 
 const ActivitiesPage = () => {
     const reports = [
+        { year: '2026-2027', link: '/reports/activity-report-2026-27.pdf' },
         { year: '2022-2023', link: 'https://docs.google.com/document/d/1YWzcHlRNvy-vZacnjVBZlkgmJxPgueOPSbKsJrarfZ4' },
         { year: '2021-2022', link: 'https://drive.google.com/file/d/14m_15U75wi752UBVDmQyyNWgzHFPFHH5' },
         { year: '2020-2021', link: 'https://drive.google.com/file/d/1w8_I3hFuaxtq0FOYDnF-HJnzVL2FxBC8' },
