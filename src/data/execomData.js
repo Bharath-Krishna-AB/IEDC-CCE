@@ -709,6 +709,7 @@ export const execomData = [
     title: "HOBBY HUB",
     span: 1,
     color: "#e8c80b", // Yellow
+    card: "/execom/cards/hobby-hub.jpg",
     description: "Hobby Hub fosters a culture of pursuing passions outside academics, organizing activities that boost creativity and collaboration.",
     members: [
       { 
