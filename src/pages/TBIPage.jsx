@@ -5,6 +5,12 @@ import './TBIPage.css';
 
 const startups = [
     {
+        id: 0,
+        name: "CAMPUS COMPASS",
+        description: "Campus Compass is a smart campus navigation web application developed by the IEDC members of Christ College of Engineering. Designed to make campus navigation simple and convenient, it helps students and visitors find classrooms, rooms, and faculty members with ease. Users can search by class name or room number, explore faculty details and departments, and navigate routes across campus buildings. Making campus exploration easier, faster, and more accessible, Campus Compass ensures that everyone can find their way around campus effortlessly.",
+        image: "/startups/campus-compass.jpg"
+    },
+    {
         id: 1,
         name: "ENGRAVERS",
         description: "Engravers is a 3D designing and printing consultancy started by an innovative young team of IEDC Centre, Christ College of Engineering. This consultancy gives technical solution using creative possibilities of 3D printing. The vibrant team of Engravers is led by Rahul Manohar from the faculty side and Sreehari Babu from the student side who is also the CEO of IEDC Centre. In addition to the 3d printing team, Engravers is also equipped with a team that helps in the designing aspect making Engravers capable of converting an idea into a product.",
