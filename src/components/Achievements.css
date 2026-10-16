@@ -52,7 +52,7 @@
 
 .achievements-stats-row {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
@@ -92,7 +92,8 @@
 
 @media (max-width: 768px) {
     .ach-section-title {
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 8vw, 2.5rem);
+        letter-spacing: -1.2px;
     }
 
     .ach-stat-value {
@@ -101,5 +102,10 @@
 
     .achievements-stats-row {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .ach-stat-value {
+        font-size: clamp(2.5rem, 12vw, 3rem);
     }
 }

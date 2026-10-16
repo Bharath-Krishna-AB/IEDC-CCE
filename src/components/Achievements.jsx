@@ -9,7 +9,6 @@ const achievements = [
     { id: 1, title: "Startups Incubated, providing early-stage support and resources for innovators.", value: "15+" },
     { id: 2, title: "Active Projects, driving groundbreaking innovations and deep industry insights.", value: "50+" },
     { id: 3, title: "Active Members, building a thriving community of brilliant student minds.", value: "500+" },
-    { id: 4, title: "Seed Funding channeled, empowering student-led ventures to launch and grow.", value: "₹50L+" },
 ];
 
 const StatItem = ({ item, index }) => {

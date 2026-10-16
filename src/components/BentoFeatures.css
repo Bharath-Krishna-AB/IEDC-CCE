@@ -124,13 +124,6 @@
     color: #ffffff;
 }
 
-.box-funding {
-    background-color: #2F231A;
-    color: #ffffff;
-    justify-content: space-between;
-    flex-grow: 1;
-}
-
 .box-explorers {
     background-color: var(--accent-gold);
     color: #ffffff;
@@ -174,31 +167,6 @@
 .box-overlay.bottom {
     justify-content: flex-end;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 40%);
-}
-
-/* Funding & Chart */
-.funding-content {
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 1;
-}
-
-.text-gold {
-    color: #F8EFE0;
-}
-
-.chart-wrapper {
-    margin-top: 1.5rem;
-    width: 100%;
-    height: 80px;
-}
-
-.mock-chart {
-    width: 100%;
-    height: 100%;
-    overflow: visible;
 }
 
 /* Pill Cloud */
@@ -373,7 +341,8 @@
 
 @media (max-width: 768px) {
     .bento-main-title {
-        font-size: 2.8rem;
+        font-size: clamp(2rem, 8.5vw, 2.8rem);
+        letter-spacing: -1.2px;
     }
 
     .bento-search-bar {
@@ -390,10 +359,29 @@
 
     .bento-grid-complex {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .bento-col-3 {
         grid-column: span 1;
         flex-direction: column;
+    }
+
+    .bento-col {
+        gap: 1rem;
+    }
+
+    .bento-box {
+        padding: 1.5rem;
+        border-radius: 18px;
+    }
+
+    .bento-box.box-image {
+        padding: 0;
+        min-height: 220px;
+    }
+
+    .box-overlay {
+        padding: 1.25rem;
     }
 }

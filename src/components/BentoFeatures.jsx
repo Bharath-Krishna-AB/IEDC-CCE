@@ -3,7 +3,7 @@ import CardSection from './common/CardSection';
 import BlurredStagger from './common/BlurredStagger';
 import IEDCButton from './common/IEDCButton';
 import { motion } from 'framer-motion';
-import { Search, Code, Users, Lightbulb, TrendingUp, MonitorPlay, ArrowRight } from 'lucide-react';
+import { Search, Code, Users, Lightbulb, MonitorPlay, ArrowRight } from 'lucide-react';
 import './BentoFeatures.css';
 
 /* Slide-up fade for secondary elements */
@@ -51,7 +51,7 @@ const BentoFeatures = () => {
 
                 {/* Column 1 */}
                 <div className="bento-col bento-col-1">
-                    <div className="bento-box box-image">
+                    <div className="bento-box box-image flex-grow">
                         <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Teamwork" className="box-bg-img" />
                         <div className="box-overlay">
                             <div className="box-header-glass">
@@ -60,27 +60,6 @@ const BentoFeatures = () => {
                         </div>
                     </div>
 
-                    <div className="bento-box box-funding">
-                        <div className="box-header-dark">
-                            <TrendingUp size={16} /> <span>Grants & Funding</span>
-                        </div>
-                        <div className="funding-content">
-                            <h3 className="huge-number text-gold">₹50L+</h3>
-                            <p className="sub-text">Disbursed to student startups</p>
-                            <div className="chart-wrapper">
-                                <svg className="mock-chart" viewBox="0 0 100 30" preserveAspectRatio="none">
-                                    <path d="M0,30 L10,25 L20,28 L30,15 L40,20 L50,10 L60,15 L70,5 L80,10 L90,2 L100,5" fill="none" stroke="var(--accent-gold)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M0,30 L10,25 L20,28 L30,15 L40,20 L50,10 L60,15 L70,5 L80,10 L90,2 L100,5 L100,30 L0,30 Z" fill="url(#goldGradient)" opacity="0.2" />
-                                    <defs>
-                                        <linearGradient id="goldGradient" x1="0" x2="0" y1="0" y2="1">
-                                            <stop offset="0%" stopColor="var(--accent-gold)" />
-                                            <stop offset="100%" stopColor="transparent" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 {/* Column 2 */}
